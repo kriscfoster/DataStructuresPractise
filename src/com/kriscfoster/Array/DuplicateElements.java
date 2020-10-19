@@ -5,20 +5,6 @@ import java.util.*;
 // Return the duplicate elements in an array
 public class DuplicateElements {
 
-    public static void main(String[] args) {
-        System.out.println("FIND DUPLICATE ELEMENTS");
-        System.out.println();
-        int[] arr = { 1, 2, 3, 5, 5, 1};
-
-        System.out.println(Arrays.toString(arr));
-        System.out.println();
-        System.out.println("BRUTE FORCE");
-        System.out.println(bruteForceFind(arr));
-        System.out.println();
-        System.out.println("HASH SET");
-        System.out.println(hashSetFind(arr));
-    }
-
     public static List<Integer> bruteForceFind(int[] arr) {
         List<Integer> duplicate = new ArrayList<>();
 
@@ -44,5 +30,17 @@ public class DuplicateElements {
         }
 
         return duplicate;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("FIND DUPLICATE ELEMENTS");
+        System.out.println();
+        int[] arr = { 1, 2, 3, 5, 5, 1};
+
+        System.out.println(Arrays.toString(arr));
+        System.out.println("\nBRUTE FORCE");
+        System.out.println(bruteForceFind(arr));
+        System.out.println("\nHASH SET");
+        System.out.println(hashSetFind(arr));
     }
 }

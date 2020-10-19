@@ -2,33 +2,8 @@ package com.kriscfoster.Array;
 
 import java.util.Arrays;
 
-// Return a continuous sub array with a sum equal to given number in a non-negative Integer array
+// Return a continuous sub-array with a sum equal to given number in a non-negative Integer array
 public class ContinuousSubArraySum {
-
-    public static void main(String args[]) {
-        System.out.println("CONTINUOUS SUB ARRAY SUM");
-        System.out.println();
-
-        int[] arr1 = new int[]{ 5, 1, 2};
-        int sum1 = 3;
-        int[] arr2 = new int[]{ 15, 2, 4, 8, 9, 5, 10, 23 };
-        int sum2 = 23;
-
-        System.out.println("BRUTE FORCE");
-        System.out.println(Arrays.toString(arr1) + ", " + sum1);
-        System.out.println(Arrays.toString(bruteForce(arr1, sum1)));
-        System.out.println();
-        System.out.println(Arrays.toString(arr2) + ", " + sum2);
-        System.out.println(Arrays.toString(bruteForce(arr2, sum2)));
-
-        System.out.println();
-        System.out.println("SLIDING");
-        System.out.println(Arrays.toString(arr1) + ", " + sum1);
-        System.out.println(Arrays.toString(sliding(arr1, sum1)));
-        System.out.println();
-        System.out.println(Arrays.toString(arr2) + ", " + sum2);
-        System.out.println(Arrays.toString(sliding(arr2, sum2)));
-    }
 
     public static int[] bruteForce(int[] arr, int sum) {
         int currentSum;
@@ -68,5 +43,28 @@ public class ContinuousSubArraySum {
         }
 
         return null;
+    }
+
+    public static void main(String args[]) {
+        System.out.println("CONTINUOUS SUB-ARRAY SUM\n");
+
+        int[] arr1 = new int[]{ 5, 1, 2};
+        int sum1 = 3;
+        int[] arr2 = new int[]{ 15, 2, 4, 8, 9, 5, 10, 23 };
+        int sum2 = 23;
+
+        System.out.println("BRUTE FORCE");
+        System.out.println(Arrays.toString(arr1) + ", " + sum1);
+        System.out.println(Arrays.toString(bruteForce(arr1, sum1)));
+        System.out.println();
+        System.out.println(Arrays.toString(arr2) + ", " + sum2);
+        System.out.println(Arrays.toString(bruteForce(arr2, sum2)));
+
+        System.out.println("\nSLIDING");
+        System.out.println(Arrays.toString(arr1) + ", " + sum1);
+        System.out.println(Arrays.toString(sliding(arr1, sum1)));
+        System.out.println();
+        System.out.println(Arrays.toString(arr2) + ", " + sum2);
+        System.out.println(Arrays.toString(sliding(arr2, sum2)));
     }
 }
