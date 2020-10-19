@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+// Find duplicate elements in an array
 public class DuplicateElements {
 
     public static List<Integer> bruteForceFind(int[] arr) {

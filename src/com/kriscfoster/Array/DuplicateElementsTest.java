@@ -12,7 +12,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 class DuplicateElementsTest {
 
     @Test
-    void bruteForceShouldReturnDuplicateElements() {
+    void shouldReturnDuplicateElementsBruteForce() {
         int[] arr = { 1, 2, 3, 5, 5, 1};
         List<Integer> duplicate = bruteForceFind(arr);
         assertThat(duplicate.size(), equalTo(2));
@@ -20,7 +20,7 @@ class DuplicateElementsTest {
     }
 
     @Test
-    void hashSetShouldReturnDuplicateElements() {
+    void shouldReturnDuplicateElementsHashSet() {
         int[] arr = { 1, 2, 3, 4, 3, 2 };
         List<Integer> duplicate = hashSetFind(arr);
         assertThat(duplicate.size(), equalTo(2));

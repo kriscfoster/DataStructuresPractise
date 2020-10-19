@@ -1,5 +1,6 @@
 package com.kriscfoster.Array;
 
+// Find second largest element in an array of integers
 public class SecondLargestElement {
 
     public static int find(int[] arr) {
