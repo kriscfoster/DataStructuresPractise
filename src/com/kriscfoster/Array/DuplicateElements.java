@@ -1,11 +1,21 @@
 package com.kriscfoster.Array;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class DuplicateElements {
+
+    public static void main(String[] args) {
+        System.out.println("FIND DUPLICATE ELEMENTS");
+        System.out.println();
+        int[] arr = { 1, 2, 3, 5, 5, 1};
+        System.out.println(Arrays.toString(arr));
+        System.out.println();
+        System.out.println("BRUTE FORCE");
+        System.out.println(bruteForceFind(arr));
+        System.out.println();
+        System.out.println("HASH SET");
+        System.out.println(hashSetFind(arr));
+    }
 
     public static List<Integer> bruteForceFind(int[] arr) {
         List<Integer> duplicate = new ArrayList<>();
