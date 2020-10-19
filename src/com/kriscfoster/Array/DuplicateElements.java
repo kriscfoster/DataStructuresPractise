@@ -2,12 +2,14 @@ package com.kriscfoster.Array;
 
 import java.util.*;
 
+// Return the duplicate elements in an array
 public class DuplicateElements {
 
     public static void main(String[] args) {
         System.out.println("FIND DUPLICATE ELEMENTS");
         System.out.println();
         int[] arr = { 1, 2, 3, 5, 5, 1};
+
         System.out.println(Arrays.toString(arr));
         System.out.println();
         System.out.println("BRUTE FORCE");
